@@ -1,0 +1,28 @@
+.odd {
+background-color: hsl(0, 38.5%, 80%);
+font-weight: 200;
+font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.oddly{
+    font-size: large;    
+
+}
+
+#two,
+#three {
+    font-weight: 500;
+
+}
+
+#two{
+    font-size: x-large;
+    color: #0000ff;
+
+}
+
+#four{
+    font-weight: bold;
+    background-color: lightgreen;
+
+}
