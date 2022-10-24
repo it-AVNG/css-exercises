@@ -9,17 +9,36 @@ body {
 }
 
 .header {
+  
+  /* original code */
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* turn on flexing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* grouping the right and left links */
+.right-links,
+.left-links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
 }
 
+
 .profile-image {
+  
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  /*add margin from the edge and other elements*/
+  margin: 8px 16px;
 }
 
 .logo {
@@ -27,6 +46,8 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /* insert logo magrin */
+  margin: 8px 16px;
 }
 
 button {
@@ -45,4 +66,9 @@ a {
 
 ul {
   list-style-type: none;
+  /*I add this*/
+  display: flex;
+  padding:0; 
+  gap:16px; 
+  
 }
