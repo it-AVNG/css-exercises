@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .modal {
@@ -20,6 +21,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* solution */
+  display: flex;
+  gap:16px;
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* it got smash so to prevent that */
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -63,4 +70,21 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header{
+  /* flexxing the header */
+ display: flex;  
+ /* align the items centering the cross axis */
+ align-items: center;
+ /* push the close button item and the text to the end  */
+ justify-content: space-between;
+ /* text properties */
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
 }
